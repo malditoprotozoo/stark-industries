@@ -1,3 +1,6 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 /*  SECTIONS  */
 .section {
   clear: both;
@@ -78,14 +81,18 @@ body {
     width: 8.333%;
 }
 
+img {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 .padding {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 9%;
+  padding-right: 9%;
 }
 
 .dark-grey {
@@ -105,6 +112,7 @@ a {
 .styless {
   list-style-type: none;
   margin: 0;
+  margin-left: 70%;
 }
 
 .styless li a {
@@ -130,16 +138,60 @@ a {
 
 #logo {
   height: 25em;
-  background-image: url('../images/header.jpg');
+  background-image: url('../images/sihq.jpeg');
   background-size: cover;
   background-position: 0 45%;
-  filter: invert(.9);
-  -webkit-filter: invert(.9);
+  filter: brightness(.5);
+  -webkit-filter: brightness(.5);
   transition: all .15s ease-in-out;
 }
 
 #logo:hover {
-  filter: invert(.2);
-  -webkit-filter: invert(.2);
+  filter: brightness(.9);
+  -webkit-filter: brightness(.9);
   transition: all .15s ease-in-out;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#contact p {
+  margin: 0;
+}
+
+.big-card-container {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25em;
+  word-wrap: break-word;
+}
+
+.card-text {
+  flex: 1 1 auto;
+  padding: 1.25em;
+}
+
+.card-footer {
+  margin: 0;
+  padding: .75em 1.25em;
+  background-color: rgba(0,0,0,.03);
+  border-top: 1px solid rgba(0,0,0,.125);
+  border-radius: 0 0
+                calc(.25em - 1px)
+                calc(.25em - 1px);
 }
