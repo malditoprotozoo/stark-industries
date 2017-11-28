@@ -137,13 +137,16 @@ button:hover {
   padding: .5em 1em;
 }
 
-.styless {
-  list-style-type: none;
+#menu-list {
   display: flex;
   margin: 0;
 }
 
-.styless li a {
+.styless {
+  list-style-type: none;
+}
+
+#menu-list li a {
   display: list-item;
   transition: all .15s ease-in-out;
   font-size: 16px;
@@ -254,4 +257,18 @@ button:hover {
 
 footer {
   text-align: center;
+}
+
+#dropdownMenu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: auto;
+  transition: all 0.3s linear;
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
 }
