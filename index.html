@@ -10,10 +10,13 @@
   </head>
   <body>
     <div id="container">
-      <nav class="section group dark-grey padding">
-        <div class="span_12_of_12" id="nav-content">
+      <nav class="section group dark-grey" id="navbar">
+        <div class="span_12_of_12 padding" id="nav-content">
           <span><a href="index.html" id="nav-title">Stark Industries</a></span>
-          <ul class="styless">
+          <div id="menu">
+            <span class="icon-navicon"></span>
+          </div>
+          <ul class="styless" id="menu-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -25,13 +28,13 @@
         <div class="span_12_of_12" id="logo"></div>
       </header>
       <section class="section group padding dark-blue">
-        <div class="col span_8_of_12">
+        <div class="col span_8_of_12" id="what">
           <h2 class="cap">What we do</h2>
           <p>Founded in the late 19th century Stark Industries remains the market leader of weapons creation, innovations and other life changing engineering.</p>
           <button class="cap">More about us</button>
         </div>
         <div class="col span_1_of_12"></div>
-        <div class="col span_2_of_12" id="contact">
+        <div class="col span_3_of_12" id="contact">
           <h2>Contact us</h2>
           <p><span class="bold">Stark Industries HQ</span></p>
           <p>200 Park Ave</p>
@@ -41,16 +44,16 @@
         </div>
         <div class="col span_12_of_12 space"></div>
       </section>
-      <section class="section group padding dark-blue">
+      <section class="section group padding dark-blue" id="cards">
         <div class="col span_4_of_12 big-card-container">
           <div class="card-container">
             <img src="assets/images/light-bulb.jpeg" alt="">
             <div class="card-text">
               <h3 class="cap">Our history</h3>
-              <p>The company's origins date back to the mid-19th century when Isaac Stark, Sr. began developing new electrical and engineering technology that helped to redefine innovative security measures for the industrial age.</p>
+              <p>The company's origins date back to the mid-19th century when Isaac Stark, Sr.  began developing new electrical and engineering technology that helped to redefine innovative security measures for the industrial age.</p>
             </div>
             <div class="col span_12_of_12 card-footer">
-              <button></button>
+              <button>More...</button>
             </div>
           </div>
         </div>
@@ -62,7 +65,7 @@
               <p>Stark Industries has invested in all kinds of things over the years, and owned all kinds of companies. Our Consumer Products Services Division is supported by the integration of many industry leaders in their various segments, supporting us in our global leadership position.</p>
             </div>
             <div class="col span_12_of_12 card-footer">
-              <button></button>
+              <button>More...</button>
             </div>
           </div>
         </div>
@@ -74,11 +77,17 @@
               <p>Stark Industries represents over 100 member companies in the US involved in the research, supply and manufacturing of medical technologies.</p>
             </div>
             <div class="col span_12_of_12 card-footer">
-              <button></button>
+              <button>More...</button>
             </div>
           </div>
         </div>
+        <div class="col span_12_of_12"></div>
       </section>
+      <footer class="section group dark-grey">
+        <div class="col span_12_of_12"></div>
+        <div class="col span_12_of_12">Copyright © Stark Industries 2017</div>
+        <div class="col span_12_of_12"></div>
+      </footer>
     </div>
   </body>
 </html>
