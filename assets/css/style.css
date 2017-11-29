@@ -232,6 +232,7 @@ button:hover {
   -webkit-filter: brightness(.5);
   transition: all .15s ease-in-out;
   cursor: pointer;
+  height: 205px;
 }
 
 .card-container img:hover {
